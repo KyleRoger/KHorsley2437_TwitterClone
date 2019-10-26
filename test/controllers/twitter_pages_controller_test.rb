@@ -10,7 +10,7 @@ class TwitterPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get twitter_pages_home_url
     assert_response :success
-    assert_select "title", "Home | #{@base_title}"
+    assert_select "title", "#{@base_title}"
 
   end
 
