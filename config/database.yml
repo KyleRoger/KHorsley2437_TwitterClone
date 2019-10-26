@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: twitter_clone_production
+  username: twitter_clone_app
+  password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
